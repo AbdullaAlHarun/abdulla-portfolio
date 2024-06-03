@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'poppins';
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #0f0d0d;
+}
+
+.header{
+    min-height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    z-index: 99;
+    position: relative;
+    border-bottom: 0.02px solid rgba(128, 128, 128, 0.2);
+}
+.logo{
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.logo a{
+    color: #fff;
+    transition: .6s;
+    font-size: 1.5rem;
+}
+.logo a:hover{
+    color: #28DF99;
+}
+.logo a:hover span{
+    color: #fff;
+}
+
+.logo a span{
+    color: #28DF99;
+
+}
+
+
+.header ul li{
+    display: inline-block;
+    
+}
+
+.header ul li a{
+    margin: 0 25px;
+    color: #fff;
+    font-size: 1.1rem;
+    transition: .6s;
+    position: relative;
+}
+
+.header ul li:hover a{
+    color: #28DF99;
+    text-shadow: 0 0 10px #99F3BD;
+}
+
+.header .fa-bars{
+    font-size: 1.3rem;
+    display: none;
+    color: #fff;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: #28DF99;
+}
+
+
+
+@media(max-width:1200px){ 
+
+    .cover{
+        display: none;
+    }
+    .header .fa-bars{
+        display: block;
+    }
+    .header ul{
+        position: absolute;
+        top: 100%;
+        left: 0px;
+        border-bottom: 2px solid var(--primery-color);
+        width: 100%;
+        background-color: #1c1c1c;
+        opacity: 0;
+        transition: .6s;
+    }   
+    .header ul li{
+        display: block;
+        margin: 10px 0;
+        padding: 10px 0;
+        padding-left: 8px;
+       
+    }
+    .header ul li a{
+        color: #28DF99;
+    }
+    .header .show{
+        opacity: 1;
+    }
+    .header .hide{
+        display: none;
+    }
+}
+
+@media(max-width:900px){ 
+
+
+}
+
+@media(max-width:768px){ 
+    
+    
+}
+
+
+
+
