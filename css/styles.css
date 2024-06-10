@@ -668,6 +668,20 @@ textarea{
   margin-top: -10px;
   display: block;
 }
+footer {
+  background-color: #0a192f;
+}
+
+.footer p{
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 20px 0;
+  font-size: 12px;
+}
+
+.footer p:hover {
+  color:#28DF99;
+}
 
 @media (max-width: 1200px) {
   .cover {
