@@ -20,9 +20,9 @@
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#about">About Me</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#skill">Skills</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#contacts">Contact</a></li>
         </ul>
         <i class="fa fa-bars"></i>
       </div>
@@ -68,12 +68,14 @@
       <div id="about">
         <div class="container2">
           <div class="row">
-            <div class="about-col-1">
+            <!-- <div class="about-col-1">
               <img src="images/mehedi.png" />
-            </div>
+            </div> -->
             <div class="about-col-2">
               <h1 class="sub-title">About Me</h1>
               <p>
+                I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!
+                <br>
                 I am a versatile professional with a background in both
                 technology and science. Currently, I am a Frontend Developer,
                 specializing in designing and developing user-friendly web and
@@ -84,7 +86,10 @@
               </p>
 
               <div class="tab-titles">
-                <p class="tab-links active-link" onclick="opentab('skills')">
+                <p class="tab-links active-link" onclick="opentab('technology')">
+                  Technologies
+                </p>
+                <p class="tab-links" onclick="opentab('skills')">
                   Skills
                 </p>
                 <p class="tab-links" onclick="opentab('experience')">
@@ -94,7 +99,18 @@
                   Education
                 </p>
               </div>
-              <div class="tab-contents active-tab" id="skills">
+              <div class="tab-contents active-tab" id="technology">
+                <ul>
+                  <li><span>JavaScript (ES6+)</span><br /></li>
+                  <li><span>React</span><br /></li>
+                  <li><span>Node.js</span><br /></li>
+                  <li><span>Tailwind</span><br /></li>
+                  <li><span>MongoDB</span><br /></li>
+                  <li><span>Premiere Pro</span><br /></li>
+                  
+                </ul>
+              </div>
+              <div class="tab-contents" id="skills">
                 <ul>
                   <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
                   <li>
@@ -147,48 +163,66 @@
       <!--My protfolio-->
       <div id="portfolio">
         <div class="container">
-          <p class="section_title">What i will do for you</p>
+          <p class="section_title">Some Things I’ve Built</p>
           <h3 class="section_heading">Latest Projects</h3>
           <div class="work-list">
             <div class="work">
               <img src="images/projects1.JPG" />
               <div class="layer">
-                <h3>Social Media App</h3>
+                <h3>AFRA'S ABC</h3>
                 <p>
-                  The app connects you yo the talented people around the world.
-                  Download it from play store.
+                  An educational game designed for young children aged 3 and up
+                  to learn the alphabet in a fun
                 </p>
-                <a href="https://afras-abc.netlify.app/" target="_blank"
-                  ><i class="fas fa-external-link-alt"></i
-                ></a>
+                <div class="project-link">
+                  <a href="https://afras-abc.netlify.app/" target="_blank"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                  <a
+                    href="https://github.com/AbdullaAlHarun/alphabet-clash"
+                    target="_blank"
+                    ><i class="fas fa-brands fa-github"></i
+                  ></a>
+                </div>
               </div>
             </div>
             <div class="work">
               <img src="images/projects2.JPG" />
               <div class="layer">
-                <h3>Music App</h3>
-                <p>
-                  The app connects you yo the talented people around the world.
-                  Download it from play store.
-                </p>
-                <a href="https://e-bus-ticketing.netlify.app/" target="_blank"
-                  ><i class="fas fa-external-link-alt"></i
-                ></a>
+                <h3>Bus Ticketing App</h3>
+                <p>This is a online bus ticketing App!</p>
+                <div class="project-link">
+                  <a href="https://e-bus-ticketing.netlify.app/" target="_blank"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                  <a
+                    href="https://github.com/AbdullaAlHarun/smart-ticketing"
+                    target="_blank"
+                    ><i class="fas fa-brands fa-github"></i
+                  ></a>
+                </div>
               </div>
             </div>
             <div class="work">
               <img src="images/project3.JPG" />
               <div class="layer">
-                <h3>Online Shopping App</h3>
+                <h3>Square Eyes App</h3>
                 <p>
-                  The app connects you yo the talented people around the world.
-                  Download it from play store.
+                  This is a video streaming website with multi functional Services.
                 </p>
-                <a
-                  href="https://square-eyes.vercel.app/index.html"
-                  target="_blank"
-                  ><i class="fas fa-external-link-alt"></i
-                ></a>
+
+                <div class="project-link">
+                  <a
+                    href="https://square-eyes.vercel.app/index.html"
+                    target="_blank"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                  <a
+                    href="https://github.com/AbdullaAlHarun/square-eyes"
+                    target="_blank"
+                    ><i class="fas fa-brands fa-github"></i
+                  ></a>
+                </div>
               </div>
             </div>
           </div>
@@ -254,7 +288,78 @@
         </div>
       </div>
 
-      
+      <!--Contact Section-->
+      <div id="contacts" class="contact">
+        <div>
+          <div class="top-container">
+            <h1>Let's Discuss Your Project</h1>
+            <p>
+              Always Avaliable for freelancing if the right project comes along.
+              Feel free to contact me
+            </p>
+          </div>
+          <div class="bottom-container">
+            <div class="contact">
+              <div class="image">
+                <img src="images/contact.jpg" alt="" />
+              </div>
+              <div class="wrapper">
+                <div class="contact-wrapper">
+                  <h4>Write an E-mail</h4>
+                  <h3>harunabdullaal@gmail.com</h3>
+                </div>
+                <div class="contact-wrapper">
+                  <h4>Phone</h4>
+                  <h3>+47 45922207</h3>
+                </div>
+                <div class="social">
+                  <div class="icon">
+                    <a href="https://www.facebook.com/44mehedi"
+                      ><i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                  </div>
+                  <div class="icon">
+                    <a href="https://www.instagram.com/explore_with_mr_and_mrs/"
+                      ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                  </div>
+                  <div class="icon">
+                    <a href="https://www.linkedin.com/in/abdullaalharun/"
+                      ><i class="fa-brands fa-linkedin-in"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form">
+              <div class="box-wrapper">
+                <div class="box">
+                  <label for="#">First Name</label>
+                  <input type="text" placeholder="Name*" />
+                </div>
+                <div class="box">
+                  <label for="#">Your Email</label>
+                  <input type="email" placeholder="Email*" />
+                </div>
+              </div>
+              <div class="box">
+                <label for="#">Subject</label>
+                <input type="text" placeholder="Subject*" />
+              </div>
+              <div class="box">
+                <label for="#">Your Message</label>
+                <textarea
+                  name="#"
+                  cols="30"
+                  rows="10"
+                  placeholder="Your Message*"
+                ></textarea>
+              </div>
+              <button>Send Message</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
     <script src="js/main.js"></script>
